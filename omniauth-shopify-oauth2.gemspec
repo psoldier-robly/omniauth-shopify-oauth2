@@ -15,10 +15,11 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ['lib']
-  s.required_ruby_version = '>= 2.1.9'
+  s.required_ruby_version = '>= 2.1.3'
 
-  s.add_runtime_dependency 'omniauth-oauth2', '~> 1.5.0'
-  s.add_runtime_dependency 'activesupport'
+  s.add_runtime_dependency 'omniauth-oauth2', '1.4.0'
+  s.add_runtime_dependency 'omniauth', '1.3.2'
+  s.add_runtime_dependency 'activesupport', '3.2.17'
 
   s.add_development_dependency 'minitest', '~> 5.6'
   s.add_development_dependency 'fakeweb', '~> 1.3'
